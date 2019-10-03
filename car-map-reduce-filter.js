@@ -8,15 +8,16 @@ let newCars = cars.filter((car) => {
 }
 )
 
+//ORIGINAL MAP CODE (WORKED)
 //let displayData = cars.map((car) => {
 //    return ` ${car.year} ${car.model} ${car.make}` 
 //})
-
 //console.log(displayData)
+
+//INSTRUCTORS MAP CODE (WORKED)
 let displayData = cars.map((car) => {
     let result = car
     car.display = car.year + ' ' + car.make + ' ' + car.model
     return result
 })
-
 console.log(displayData)
