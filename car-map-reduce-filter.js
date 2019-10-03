@@ -8,4 +8,15 @@ let newCars = cars.filter((car) => {
 }
 )
 
-console.log(newCars)
+//let displayData = cars.map((car) => {
+//    return ` ${car.year} ${car.model} ${car.make}` 
+//})
+
+//console.log(displayData)
+let displayData = cars.map((car) => {
+    let result = car
+    car.display = car.year + ' ' + car.make + ' ' + car.model
+    return result
+})
+
+console.log(displayData)
